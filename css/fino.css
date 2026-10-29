@@ -1,0 +1,53 @@
+.degradado pro {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: rotarFondos 15s infinite;
+}
+
+/* Asigna cada imagen de fondo */
+.img1 {
+  background-image: url('https://i.pinimg.com/736x/18/78/32/18783272885b251b381520606266b39f.jpg');
+  animation-delay: 0s;
+}
+
+.img2 {
+  background-image: url('https://static.wikia.nocookie.net/terraria/images/a/ad/Diferencia_subsuelo_y_cavernas.png/revision/latest?cb=20190303192322&path-prefix=es');
+  animation-delay: 5s;
+}
+
+.img3 {
+  background-image: url('https://i.redd.it/0zdu38kuf4id1.png');
+  animation-delay: 10s;
+}
+
+/* Definición de la animación de fundido (fade) */
+@keyframes rotarFondos {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1; /* Aparece */
+  }
+  33% {
+    opacity: 1; /* Se mantiene visible */
+  }
+  48% {
+    opacity: 0; /* Desaparece */
+  }
+  100% {
+    opacity: 0;
+  }
+}
