@@ -8,16 +8,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+<script>
+  window.addEventListener('scroll', () => {
+    // Calcula el porcentaje actual de scroll
+    const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+    const porcentajeScroll = (window.scrollY / alturaTotal) * 100;
+
+    const fondo2 = document.querySelector('.fondo-2');
+    const fondo3 = document.querySelector('.fondo-3');
+
+    // Control del fondo 2 (Por ejemplo, aparece al 30%)
+    if (porcentajeScroll >= 30) {
+      fondo2.style.opacity = '1';
+    } else {
+      fondo2.style.opacity = '0';
+    }
+
+    // Control del fondo 3 (Por ejemplo, aparece al 60%)
+    if (porcentajeScroll >= 60) {
+      fondo3.style.opacity = '1';
+    } else {
+      fondo3.style.opacity = '0';
+    }
+  });
+</script>
 </head>
 <body>
-    <div class="degradado">
-  <div class="img1"></div>
-  <div class="img2"></div>
-  <div class="img3"></div>
-</div>
-    <div class="fondo">
-        <h1>TERRARIA-Resumido</h1>
-    </div>
+     <!-- Fondos fijos detrás del contenido -->
+  <div class="contenedor-fondos">
+    <div class="fondo fondo-1"></div>
+    <div class="fondo fondo-2"></div>
+    <div class="fondo fondo-3"></div>
+  </div>
+
+  <!-- Contenido de la página -->
+  <section><h1>Inicio (Fondo 1)</h1></section>
+  <section><h1>Bajando... (Fondo 2 activado al 30%)</h1></section>
+  <section><h1>Cerca del final... (Fondo 3 activado al 60%)</h1></section>
     
 </body>
 </html> 
