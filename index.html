@@ -8,9 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+<script>
+    window.addEventListener('scroll', () => {
+      // Calcula matemáticamente el porcentaje exacto del scroll actual
+      const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+      const porcentajeScroll = (window.scrollY / alturaTotal) * 100;
+
+      const fondo2 = document.querySelector('.fondo-2');
+      const fondo3 = document.querySelector('.fondo-3');
+
+      // Si el usuario pasa del 30% del scroll, activa el fondo 2
+      if (porcentajeScroll >= 30) {
+        fondo2.classList.add('activo');
+      } else {
+        fondo2.classList.remove('activo');
+      }
+
+      // Si el usuario pasa del 60% del scroll, activa el fondo 3
+      if (porcentajeScroll >= 60) {
+        fondo3.classList.add('activo');
+      } else {
+        fondo3.classList.remove('activo');
+      }
+    });
+ </script>
 </head>
 <body>
- <!-- Contenedor fijo para las imágenes de fondo -->
+
+  <!-- Contenedor fijo para las imágenes de fondo -->
   <div class="contenedor-fondos">
     <div class="fondo fondo-1"></div>
     <div class="fondo fondo-2"></div>
@@ -29,6 +54,7 @@
   <section class="seccion">
     <h1>Cerca del final... (Fondo 3 activado al 60%)</h1>
   </section>
-    
+
+  
 </body>
-</html> 
+</html>

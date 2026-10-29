@@ -1,4 +1,29 @@
-/* Contenedor fijo para los fondos */
+ /* ==========================================
+       ESTRUCTURA GENERAL Y CONTENIDO
+       ========================================== */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: white;
+      background-color: #111;
+    }
+
+    /* Forzamos a que cada sección ocupe toda la pantalla para generar el scroll */
+    .seccion {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* ==========================================
+       CONTENEDOR DE FONDOS (FIJO ATRÁS)
+       ========================================== */
     .contenedor-fondos {
       position: fixed;
       top: 0;
@@ -8,7 +33,7 @@
       z-index: -1;
     }
 
-    /* Estilo base para todas las imágenes de fondo */
+    /* Estilo base para todas las capas de imágenes */
     .fondo {
       position: absolute;
       top: 0;
@@ -17,58 +42,39 @@
       height: 100%;
       background-size: cover;
       background-position: center;
-      transition: opacity 0.5s ease; /* Suaviza el cambio */
+      background-repeat: no-repeat;
+      opacity: 0;
+      
+      /* Controla la suavidad: 1.2s hace que el desvanecido sea lento y elegante */
+      transition: opacity 1.2s ease-in-out; 
+      will-change: opacity; /* Optimiza el rendimiento de la animación */
     }
 
-    /* Imagen 1: Visible desde el principio */
+    /* ==========================================
+       IMÁGENES Y ORDEN DE CAPAS (Z-INDEX)
+       ========================================== */
+    /* Fondo 1: Visible desde el inicio en la capa base */
     .fondo-1 {
       background-image: url('https://i.pinimg.com/736x/18/78/32/18783272885b251b381520606266b39f.jpg');
+      opacity: 1;
       z-index: 1;
     }
 
-    /* Imagen 2: Aparece al llegar al 30% del scroll */
+    /* Fondo 2: Capa intermedia, usa aceleración por hardware */
     .fondo-2 {
       background-image: url('https://static.wikia.nocookie.net/terraria/images/a/ad/Diferencia_subsuelo_y_cavernas.png/revision/latest?cb=20190303192322&path-prefix=es');
       z-index: 2;
-      opacity: 0;
-      animation: aparecer fade linear both;
-      animation-timeline: scroll(root);
-      animation-range: 25% 35%; /* Inicia en 25% y es 100% visible en 35% */
+      transform: translateZ(0);
     }
 
-    /* Imagen 3: Aparece al llegar al 60% del scroll */
+    /* Fondo 3: Capa superior, usa aceleración por hardware */
     .fondo-3 {
       background-image: url('https://i.redd.it/0zdu38kuf4id1.png');
       z-index: 3;
-      opacity: 0;
-      animation: aparecer fade linear both;
-      animation-timeline: scroll(root);
-      animation-range: 55% 65%; /* Inicia en 55% y es 100% visible en 65% */
+      transform: translateZ(0);
     }
 
-    /* Animación clave para cambiar la opacidad */
-    @keyframes aparecer {
-      to {
-        opacity: 1;
-      }
+    /* Clase que activa el JavaScript de forma suave */
+    .fondo.activo {
+      opacity: 1;
     }
-
-    /* Estilos del contenido para permitir el scroll */
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      color: white;
-    }
-
-    section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 3rem;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-    }
-    body {
-  /* Obliga a la página a medir 3 veces el tamaño de la pantalla */
-  min-height: 300vh; 
-}
