@@ -62,7 +62,7 @@
 
     /* Fondo 2: Capa intermedia, usa aceleración por hardware */
     .fondo-2 {
-      background-image: url('https://www.reddit.com/r/Terraria/comments/99u67a/new_mushroom_biome_background_for_136/#lightbox');
+      background-image: url('https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d3/Glowing_Mushroom_background_2.png/revision/latest/scale-to-width-down/250?cb=20200821220617');
       z-index: 2;
       transform: translateZ(0);
     }
