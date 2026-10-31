@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondo con Transición por Scroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fino.css">
+<script>
+    window.addEventListener('scroll', () => {
+      const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+      const porcentajeScroll = (window.scrollY / alturaTotal) * 100;
+
+      const fondo2 = document.querySelector('.fondo-2');
+      const fondo3 = document.querySelector('.fondo-3');
+
+      if (porcentajeScroll >= 33) {
+        fondo2.classList.add('activo');
+      } else {
+        fondo2.classList.remove('activo');
+      }
+      if (porcentajeScroll >= 66) {
+        fondo3.classList.add('activo');
+      } else {
+        fondo3.classList.remove('activo');
+      }
+    });
+ </script>
+</head>
+<body>
+
+<div class="main-header">
+  <header class="header-contendor">
+    <header nav class="header-nav">
+        <img src="https://i.postimg.cc/J4Gbzr7p/titulo-recortada.png" alt="Logo" class="header-logo">
+        <nav class="header-menu">
+          <a href="Principal.html" class="centrate">Inicio</a>
+          <a href="Secundario.html" class="centrate">Clases</a>
+          <a href="Tercero.html" class="centrate">Jefes</a>
+          <a href="Cuarta.html" class="centrate">Hardmode</a>
+        </nav>
+  </header>
+</div>
+<hr>
+<div class="main-content">
+  <h1>Clases de Terraria: Guía Resumida</h1>
+  <p>Aunque Terraria no obliga al jugador a escoger una clase desde el inicio, el equipamiento que utilices determinará tu estilo de juego. Cada clase posee armas, armaduras y accesorios que potencian un tipo específico de daño. A medida que avanzas, specializarte en una clase se vuelve cada vez más importante para derrotar a los jefes más difíciles.</p><br>
+  <h2>1. Melee (Cuerpo a Cuerpo)</h2>
+  <h3>Descripción:</h3><br>
+  <p>El Guerrero es la clase specializada en el combate cuerpo a cuerpo. Utiliza espadas, lanzas, yoyós, búmeranes y otras armas de corto alcance. Es la clase más resistente del juego gracias a sus elevadas estadísticas de defensa.</p><br>
+  <h3>Ventajas:</h3><br>
+  <ol>   
+    <li>Alta defensa y resistencia a los ataques enemigos.</li>
+    <li>Gran variedad de armas cuerpo a cuerpo.</li>
+    <li>Acceso a armaduras que aumentan la regeneración de vida.</li>
+    <li>Puede resistir varios golpes de jefes poderosos.</li>
+  </ol><br>
+  <h3>Desventajas:</h3><br>
+  <ol>
+    <li>Requiere acercarse a los enemigos, lo que puede ser peligroso.</li>
+    <li>Dependencia de la movilidad y posicionamiento durante los combates.</li>
+  </ol><br>
+  <h3>Mecánicas únicas</h3> 
+  <h4>Defensa elevada</h4>
+  <p>El Melee puede equipar armaduras que aumentan significativamente su defensa, permitiéndole absorber más daño antes de caer. Esto es especialmente útil contra jefes que infligen ataques devastadores.</p><br>
+  <h4>Regeneración de vida</h4>
+  <p>Algunas armaduras y accesorios del Melee proporcionan regeneración de vida, lo que le permite recuperarse durante los combates prolongados. Esto es crucial para sobrevivir a enfrentamientos largos contra jefes.</p><br>
+  <h4>Variedad de armas</h4>  
+  <p>El Melee tiene acceso a una amplia variedad de armas cuerpo a cuerpo, cada una con sus propias características y ventajas en diferentes situaciones de combate.</p><br>
+  <h4>Proyectiles cuerpo a cuerpo</h4>
+  <p>En Hardmode muchas espadas generan proyectiles de energía sin dejar de considerarse armas melee.</p><br>
+  <p>Ejemplos:</p><br>
+  <ol>
+    <li>Night's Edge: Una de las espadas más poderosas del juego, que combina varios ingredientes para crear un arma devastadora.</li>
+    <li>Terra Blade: Una espada legendaria que inflige un gran daño y tiene un alcance extendido gracias a su proyectil.</li>
+    <li>Excalibur: Una espada de alto nivel que inflige daño adicional a los enemigos y tiene un efecto visual impresionante.</li>
+  </ol><br>
+  <h3>Armaduras recomendadas</h3>
+  <ol>
+    <li>Molten Armor: Proporciona una gran defensa y aumenta el daño cuerpo a cuerpo.</li>
+    <li>Titanium Armor: Ofrece una defensa sólida y aumenta la velocidad de movimiento.</li>
+    <li>Chlorophyte Armor: Aumenta la regeneración de vida y proporciona bonificaciones al daño cuerpo a cuerpo.</li>
+  </ol><br>
+  <h3>Accesorios recomendados</h3>
+  <ol>
+    <li>Obsidian Shield: Proporciona inmunidad al fuego y aumenta la defensa.</li>
+    <li>Feral Claws: Aumenta la velocidad de ataque y permite ataques más rápidos.</li>
+    <li>Warrior Emblem: Incrementa el daño cuerpo a cuerpo.</li>
+  </ol><br>
+  <img src="https://i.redd.it/8ost3082fkgg1.png" alt="Melee Class" class="main-image"><br>
+  <h2>2. Ranger (A Distancia)</h2>
+  <h3>Descripción:</h3><br>
+  <p>El Ranger es la clase especializada en el combate a distancia. Utiliza arcos, armas de fuego y munición para atacar a los enemigos desde lejos. Su principal ventaja es la capacidad de infligir daño sin exponerse directamente al peligro.</p><br>
+  <h3>Ventajas:</h3><br>
+  <ol>
+    <li>Puede atacar a los enemigos desde una distancia segura.</li>
+    <li>Gran variedad de armas a distancia, incluyendo arcos y armas de fuego.</li>
+    <li>Acceso a armaduras que aumentan la velocidad de disparo y el daño a distancia.</li>
+  </ol><br>
+  <h3>Desventajas:</h3><br>
+  <ol>
+    <li>Dependencia de la munición, que puede agotarse durante los combates.</li>
+    <li>Menor resistencia a los ataques enemigos en comparación con el Melee.</li>
+  </ol><br>
+  <h3>Mecánicas únicas</h3>
+  <h4>Munición y recarga</h4>
+  <p>El Ranger depende de la munición para sus ataques. Es importante gestionar adecuadamente los recursos y asegurarse de tener suficiente munición durante los enfrentamientos prolongados.</p><br>
+  <h4>Velocidad de disparo</h4>
+  <p>Algunas armaduras y accesorios del Ranger aumentan la velocidad de disparo, permitiéndole infligir daño más rápidamente y mantener a los enemigos a raya.</p><br>
+  <h4>Variedad de armas a distancia</h4> 
+  <p>El Ranger tiene acceso a una amplia gama de armas a distancia, cada una con sus propias características y ventajas en diferentes situaciones de combate.</p><br>
+  <p>Ejemplos:</p><br>
+  <ol>
+    <li>Clockwork Assault Rifle: Un arma de fuego automática que inflige daño constante a los enemigos.</li>
+    <li>Chlorophyte Shotbow: Un arco que dispara múltiples flechas a la vez, ideal para enfrentamientos masivos.</li>
+    <li>Megashark: Una de las armas de fuego más poderosas del juego, con una alta velocidad de disparo y gran daño.</li>
+  </ol><br>
+  <h3>Armaduras recomendadas</h3>
+  <ol>
+    <li>Necro Armor: Aumenta el daño a distancia y proporciona bonificaciones a la velocidad de disparo.</li>
+    <li>Shroomite Armor: Ofrece una gran defensa y aumenta el daño a distancia, especialmente con armas de fuego.</li>
+    <li>Vortex Armor: Proporciona habilidades especiales y aumenta la velocidad de disparo y el daño a distancia.</li>
+  </ol><br>
+  <h3>Accesorios recomendados</h3>
+  <ol>
+    <li>Scope: Aumenta el alcance y la precisión de los ataques a distancia.</li>
+    <li>Band of Regeneration: Recupera salud mientras se dispara.</li>
+    <li>Avenger Emblem: Aumenta todos los tipos de daño en un 12%.</li>
+  </ol><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0q9aCCO5aR13x6CgJKkA_tZv_A9tr0rPTdEUWudSUhBLytxgKrjCMjzjV&s=10" alt="Ranger Class" class="main-image"><br>
+  <h2>3. Mago (Magia)</h2>
+  <h3>Descripción:</h3><br>
+  <p>El Mago es la clase especializada en el uso de hechizos y magia. Utiliza varitas, bastones y otros objetos mágicos para infligir daño a los enemigos. Su principal ventaja es la capacidad de lanzar ataques poderosos desde una distancia segura, aunque requiere una gestión cuidadosa del maná.</p><br>
+  <h3>Ventajas:</h3><br>
+  <ol>
+    <li>Puede infligir daño masivo con hechizos poderosos.</li>
+    <li>Acceso a una amplia variedad de hechizos y habilidades mágicas.</li>
+    <li>Capacidad de atacar desde una distancia segura.</li>
+  </ol><br>
+  <h3>Desventajas:</h3><br>
+  <ol>
+    <li>Dependencia del maná, que puede agotarse durante los combates.</li>
+    <li>Menor resistencia a los ataques enemigos en comparación con el Melee.</li>
+  </ol><br>
+  <h3>Mecánicas únicas</h3>
+  <h4>Gestión del maná</h4>
+  <p>El Mago debe gestionar su maná con cuidado, ya que muchos de sus hechizos requieren una cantidad significativa de energía mágica. La recuperación de maná puede lograrse mediante el uso de ciertos accesorios o la posición en el mapa.</p><br>
+  <h4>Enfermedad de maná (Mana Sickness)</h4>
+  <p>Cuando un jugador consume una poción de maná obtiene una reducción temporal de daño mágico. </p><br>
+  <h3>Armas mágicas</h3>  
+  <ol>
+    <li>Golden Shower: Un hechizo que inflige daño continuo a los enemigos y reduce su defensa.</li>
+    <li>Crystal Serpent: Un bastón que dispara proyectiles de cristal que rebotan en las superficies.</li>
+    <li>Last Prism: Un arma mágica extremadamente poderosa que dispara un rayo concentrado de energía.</li>
+  </ol><br>
+  <h3>Armaduras recomendadas</h3>
+  <ol>
+    <li>Jungle Armor: Aumenta el daño mágico y proporciona regeneración de maná.</li>
+    <li>Spectre Armor: Ofrece habilidades especiales y aumenta la regeneración de maná.</li>
+    <li>Shroomite Armor: Proporciona bonificaciones al daño mágico y aumenta la velocidad de lanzamiento de hechizos.</li>
+  </ol><br>
+  <h3>Accesorios recomendados</h3>
+  <ol>
+    <li>Celestial Cuffs: Aumenta la regeneración de maná y proporciona bonificaciones al daño mágico.</li>
+    <li>Magic Cuffs: Recupera maná al recibir daño y aumenta la regeneración de maná.</li>
+    <li>Mana Flower: Proporciona energía mágica para usar habilidades especiales.</li>
+  </ol><br>
+  <img src="https://static.wikia.nocookie.net/20354612-c025-4772-8d27-b0a0ccb42689" alt="Mago Class" class="main-image"><br>
+  <h2>4. Invocador (Summoner)</h2>
+  <h3>Descripción:</h3><br>
+  <p>El Invocador es la clase especializada en invocar criaturas y esbirros que luchan automáticamente contra los enemigos. Utiliza varitas y objetos mágicos para llamar a estas entidades, permitiendo al jugador centrarse en la estrategia y el posicionamiento durante los combates.</p><br>
+  <h3>Ventajas:</h3><br>
+  <ol>
+    <li>Puede invocar múltiples criaturas para atacar a los enemigos.</li>
+    <li>Permite al jugador centrarse en la estrategia y el posicionamiento.</li>
+    <li>Acceso a una variedad de esbirros con habilidades únicas.</li>
+  </ol><br>
+  <h3>Desventajas:</h3><br>
+  <ol>
+    <li>Dependencia de los esbirros para infligir daño, lo que puede ser menos efectivo contra ciertos enemigos.</li>
+    <li>Menor resistencia a los ataques enemigos en comparación con el Melee.</li>
+  </ol><br>
+  <h3>Mecánicas únicas</h3>
+  <h4>Invocación de esbirros</h4>
+  <p>El Invocador puede invocar diferentes tipos de esbirros, cada uno con habilidades y comportamientos únicos. Estos esbirros atacan automáticamente a los enemigos, lo que permite al jugador centrarse en la estrategia y el posicionamiento durante los combates.</p><br>
+  <h4>Gestión de esbirros</h4>
+  <p>El Invocador debe gestionar sus esbirros de manera eficiente, asegurándose de que estén bien equipados y posicionados para maximizar su efectividad en el campo de batalla.</p><br>
+  <h3>Armas de invocación</h3>
+  <ol>
+    <li>Imp Staff: Invoca un esbirro de fuego que inflige daño a los enemigos cercanos.</li>
+    <li>Hornet Staff: Invoca un esbirro que dispara aguijones venenosos a los enemigos.</li>
+    <li>Stardust Dragon Staff: Invoca un dragón estelar que inflige daño masivo a los enemigos.</li>
+  </ol><br>
+  <h3>Armaduras recomendadas</h3>
+  <ol>
+    <li>Flinx Fur Coat: Otorga grandes beneficios para la clase Invocador (Summoner) en el juego temprano.</li>
+    <li>Stardust Armor: Invoca a un Guardián de Polvo Estelar que ataca a los enemigos cercanos de forma automática.</li>
+  </ol><br>
+  <h3>Accesorios recomendados</h3>
+  <ol>
+    <li>Papyrus Scarab: Aumenta el daño de los esbirros y proporciona bonificaciones a la velocidad de invocación.</li>
+    <li>Summoner Emblem: Incrementa el daño de los esbirros y mejora su efectividad en combate.</li>
+    <li>Necromantic Scroll: Aumenta la duración de los esbirros y mejora su capacidad de ataque.</li>
+  </ol><br>
+  <img src="https://images.steamusercontent.com/ugc/2470863338784152614/4FD84A56D61FC1165DC7AD275C86096B1AFBE01B/"><br>
+  <h2>¿Qué clase elegir?</h2>
+  <p>La elección de la clase depende del estilo de juego preferido por cada jugador. Aquellos que disfrutan del combate cuerpo a cuerpo y la resistencia pueden optar por el Melee. Los jugadores que prefieren atacar desde la distancia y mantener a raya a los enemigos pueden elegir el Ranger. Aquellos interesados en la magia y los hechizos pueden inclinarse hacia el Mago, mientras que los que disfrutan de invocar criaturas y esbirros pueden optar por el Invocador.</p><br>
+  <p>Es importante experimentar con diferentes clases y combinaciones de equipo para encontrar la que mejor se adapte a tu estilo de juego y te permita enfrentar los desafíos que Terraria presenta a lo largo de su extensa aventura.</p><br>
+
+</div>
+<div class="main-footer">
+  <footer class="footer-contendor">
+    <p class="footer-text">© 2026 Mi Sitio Web de Azael Isaac Robles Lazcano. Todos los derechos reservados.</p> 
+  </footer>
+</div>
+
+
+
+  <div class="contenedor-fondos">
+    <div class="fondo fondo-1"></div>
+    <div class="fondo fondo-2"></div>
+    <div class="fondo fondo-3"></div>
+  </div>
+</body>
+</html>

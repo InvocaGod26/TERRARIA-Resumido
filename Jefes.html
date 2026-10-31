@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondo con Transición por Scroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fino.css">
+<script>
+    window.addEventListener('scroll', () => {
+      const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+      const porcentajeScroll = (window.scrollY / alturaTotal) * 100;
+
+      const fondo2 = document.querySelector('.fondo-2');
+      const fondo3 = document.querySelector('.fondo-3');
+
+      if (porcentajeScroll >= 33) {
+        fondo2.classList.add('activo');
+      } else {
+        fondo2.classList.remove('activo');
+      }
+      if (porcentajeScroll >= 66) {
+        fondo3.classList.add('activo');
+      } else {
+        fondo3.classList.remove('activo');
+      }
+    });
+ </script>
+</head>
+<body>
+
+<div class="main-header">
+  <header class="header-contendor">
+    <header nav class="header-nav">
+        <img src="https://i.postimg.cc/J4Gbzr7p/titulo-recortada.png" alt="Logo" class="header-logo">
+        <nav class="header-menu">
+          <a href="Principal.html" class="centrate">Inicio</a>
+          <a href="Secundario.html" class="centrate">Clases</a>
+          <a href="Tercero.html" class="centrate">Jefes</a>
+          <a href="Cuarta.html" class="centrate">Hardmode</a>
+        </nav>
+  </header>
+</div>
+<hr>
+<div class="main-content">
+<h1>Cómo invocar a todos los jefes de Terraria</h1>
+<p>A continuación encontrarás una guía organizada con los principales jefes de Terraria, los objetos necesarios para invocarlos y las condiciones requeridas.</p><br>
+<h2>Jefes del modo normal</h2>
+<h3>Rey Slime (King Slime)</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Usar un Slime Crown.</li>
+  <li>También puede aparecer aleatoriamente durante una invasión de Slimes.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>20 Gel.</li>
+  <li>1 Gold o Platinum Crown.</li>
+</ol>
+<img src="https://i.redd.it/z7twd2f1oeh71.jpg" alt="Rey Slime" class="main-image"><br>
+<h3>Ojo de Cthulhu</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Usar un Suspicious Looking Eye durante la noche.</li>
+  <li>También puede aparecer automáticamente si tienes suficiente vida y equipo.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>6 Lentes.</li>
+  <li>Altar Demoníaco o Carmesí.</li>
+</ol>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgqr7q9fXGuwXX3j28Nmwm0TB4nfVX_Fk7linbNvGyw24mVcCulhKrc3Rl&s=10" alt="Ojo de Cthulhu" class="main-image"><br>
+<h3>Devoramundos (Eater of Worlds)</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Destruir 3 Orbes Sombríos en la Corrupción.</li>
+  <li>Usar un Worm Food.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>15 Rotten Chunks.</li>
+  <li>30 Vile Powder.</li>
+</ol>
+<img src="https://preview.redd.it/eater-of-worlds-fan-art-v0-q1w8zng8qk951.png?auto=webp&s=d5434fdab26222ec4dbc8306f387f409ca9fc35b"><br>
+<h3>Cerebro de Cthulhu</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Destruir 3 Corazones Carmesí en el Carmesí.</li>
+  <li>Usar un Bloody Spine.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>15 Vertebrae.</li>
+  <li>30 Vicious Powder.</li>
+</ol>
+<img src="https://cdn1.jigidi.com/thumbs/0ABBDBRP/l" alt="Cerebro de Cthulhu" class="main-image"><br>
+<h3>Abeja Reina (Queen Bee)</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Romper una larva dentro de una colmena subterránea.</li>
+  <li>Usar Abeemination en la Selva.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>Hive Blocks.</li>
+  <li>Honey Blocks.</li>
+  <li>Stingers.</li>
+  <li>Bottled Honey.</li>
+</ol>
+<img src="https://static.wikia.nocookie.net/ficcion-sin-limites/images/6/6b/QueenB.png/revision/latest?cb=20201230051219&path-prefix=es" alt="Abeja Reina" class="main-image"><br>
+<h3>Skeletron</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Hablar con el Anciano frente a la Mazmorra por la noche y seleccionar "Maldición".</li>
+</ol>
+<p>Solo puede lucharse de noche.</p><br>
+<img src="https://static.wikia.nocookie.net/ficcion-sin-limites/images/4/4d/Skelly.png/revision/latest?cb=20201230233724&path-prefix=es" alt="Skeletron" class="main-image"><br>
+<h3>Deerclops</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Usar un Deer Thing en el Invierno.</li>
+  <li>También puede aparecer aleatoriamente durante una tormenta de nieve.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>Flinx Fur.</li>
+  <li>Demonite/Crimtane Ore.</li>
+  <li>Lens.</li>
+</ol>
+<img src="https://preview.redd.it/day-5-deer-v0-tdg7vrocrmtf1.png?auto=webp&s=afbb3a229699fec06fac7b0123b7596c803ff194" alt="Deerclops" class="main-image"><br> 
+<h3>Muro Carnoso (Wall of Flesh)</h3>
+<p>Cómo invocarlo:</p>
+<p>Jefe final del modo normal.</p>
+<ol>
+  <li>Arrojar una Muñeca Vudú de Guía a la lava en el Inframundo.</li>
+</ol>
+<p>Al derrotarlo se activa el Hardmode.</p>
+<img src="https://static.wikia.nocookie.net/total-terraria-universes/images/3/3a/Anniemations-wall-of-flesh.jpg/revision/latest?cb=20230510232834" alt="Muro Carnoso" class="main-image"><br>
+<h1>Jefes del Hardmode</h1> 
+<h2>Jefes mecánicos</h2>
+<h3>Destructor (The Destroyer)</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Usar un Mechanical Worm durante la noche.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>10 Rotten Chunks o 10 Vertebrae.</li>
+  <li>15 Iron/Lead Bars.</li>
+  <li>5 Souls of Night.</li>
+</ol>
+<img src="https://i.redd.it/9ibunkgatmz01.png" alt="Destructor" class="main-image"><br>
+<h3>Gemelos (The Twins)</h3>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Usar un Mechanical Eye durante la noche.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>3 Lens.</li>
+  <li>6 Iron/Lead Bars.</li>
+  <li>5 Souls of Light.</li>
+</ol>
+<img src="https://i.pinimg.com/1200x/ac/41/33/ac413345d0d0e086dfc8553ab0de78cf.jpg" alt="Gemelos" class="main-image"><br>
+<h2>Skeletron prime</h2>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Usar un Mechanical Skull durante la noche.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>5 Iron/Lead Bars.</li>
+  <li>3 Souls of Light.</li>
+  <li>3 Souls of Night.</li>
+</ol>
+<img src="https://i.redd.it/nfqg3ofbwgkz.png" alt="Skeletron prime" class="main-image"><br>
+<h2>Plantera</h2>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Derrotar a los tres jefes mecánicos.</li>
+  <li>Romper una Flor de Plantera en la Selva subterránea.</li>
+</ol>
+<p>Solo puede lucharse en la Selva subterránea.</p><br>
+<img src="https://cdna.artstation.com/p/assets/images/images/023/814/174/large/jennette-brown-plantera.jpg?1580415264" alt="Plantera" class="main-image"><br>
+<h2>Emperatriz de la Luz (Empress of Light)</h2>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Derrotar a Plantera.</li>
+  <li>Matar una Prismatic Lacewing durante la noche en el bioma Hallow.</li>
+</ol>
+<p>Solo aparece entre las 19:30 y las 00:00 (se puede invocar de noche y de día pero de dia es mas dificil).</p><br>
+<img src="https://i.redd.it/p03ss7ioba671.png" alt="Emperatriz de la Luz" class="main-image"><br>
+<h2>Duque Fishron (Duke Fishron)</h2>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Pescar en el océano usando un Truffle Worm.</li>
+</ol>
+<p>Crafteo del objeto:</p>
+<ol>
+  <li>1 Truffle Worm.</li>
+</ol>
+<img src="https://i.redd.it/imscbsm999d31.png" alt="Duque Fishron" class="main-image"><br>
+<h2>Golem</h2>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Derrotar a Plantera.</li>
+  <li>Utilizar una Lihzahrd Power Cell en el altar del Templo de la Selva.</li>
+</ol>
+<p>Solo puede lucharse en el Templo de la Selva.</p><br>
+<img src="https://i.pinimg.com/736x/2c/8f/11/2c8f11e1be8b7c7b5fb833ef7fe6f65f.jpg" alt="Golem" class="main-image"><br>
+<h2>Cultista Lunático (Lunatic Cultist)</h2>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Derrotar a Golem.</li>
+  <li>Matar a los cuatro cultistas que aparecen frente a la entrada de la Mazmorra.</li>
+</ol>
+<p>Solo puede lucharse en la Mazmorra.</p><br>
+<img src="https://static.wikia.nocookie.net/ficcion-sin-limites/images/a/a7/Cultista.png/revision/latest/scale-to-width-down/1200?cb=20230213141538&path-prefix=es" alt="Cultista Lunático" class="main-image"><br>
+<h2>Pilares Celestiales</h2>
+<p>Cómo invocarlos:</p>
+<p>Aparecen automáticamente después de derrotar al Cultista Lunático.</p>
+<p>Son:</p>
+<ol>
+  <li>Pilar Solar</li>
+  <li>Pilar Nebulosa</li>
+  <li>Pilar Vórtice</li>
+  <li>Pilar Polvo Estelar</li>
+</ol>
+<p>Debes destruir los cuatro para avanzar.</p><br>
+<img src="https://static.wikia.nocookie.net/characterprofile/images/8/85/CelestialP.jpeg/revision/latest?cb=20200825185927" alt="Pilares Celestiales" class="main-image"><br>
+<h2>Moon Lord</h2>
+<p>Cómo invocarlo:</p>
+<ol>
+  <li>Derrotar a los cuatro Pilares Celestiales.</li>
+  <li>Aparecerá automáticamente aproximadamente un minuto después.</li>
+</ol>
+<img src="https://i.redd.it/chshthieb5fh1.jpeg" alt="Moon Lord" class="main-image"><br>
+<h1>Orden recomendado de progresión</h1>
+<ol>
+  <li>Rey Slime</li>
+  <li>Ojo de Cthulhu</li>
+  <li>Devoramundos o Cerebro de Cthulhu</li>
+  <li>Abeja Reina</li>
+  <li>Skeletron</li>
+  <li>Deerclops</li>
+  <li>Muro Carnoso</li>
+  <li>Destructor, Gemelos y Skeletron Prime (en cualquier orden)</li>
+  <li>Plantera</li>
+  <li>Emperatriz de la Luz</li>
+  <li>Duque Fishron</li>
+  <li>Golem</li>
+  <li>Cultista Lunático</li>
+  <li>Pilares Celestiales (en cualquier orden)</li>
+  <li>Moon Lord</li>
+</ol>
+</div>
+<img src="https://i.redd.it/5j5v5v5v5v5v5.png" alt="Golem" class="main-image"><br>
+</div>
+<div class="main-footer">
+  <footer class="footer-contendor">
+    <p class="footer-text">© 2026 Mi Sitio Web de Azael Isaac Robles Lazcano. Todos los derechos reservados.</p> 
+  </footer>
+</div>
+
+
+
+  <div class="contenedor-fondos">
+    <div class="fondo fondo-1"></div>
+    <div class="fondo fondo-2"></div>
+    <div class="fondo fondo-3"></div>
+  </div>
+</body>
+</html>

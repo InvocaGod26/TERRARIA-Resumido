@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERRARIA-Resumido</title>
-    <link rel="stylesheet" href="css/fino.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondo con Transición por Scroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fino.css">
 <script>
     window.addEventListener('scroll', () => {
-      // Calcula matemáticamente el porcentaje exacto del scroll actual
       const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
       const porcentajeScroll = (window.scrollY / alturaTotal) * 100;
 
       const fondo2 = document.querySelector('.fondo-2');
       const fondo3 = document.querySelector('.fondo-3');
 
-      // Si el usuario pasa del 30% del scroll, activa el fondo 2
-      if (porcentajeScroll >= 30) {
+      if (porcentajeScroll >= 33) {
         fondo2.classList.add('activo');
       } else {
         fondo2.classList.remove('activo');
       }
-
-      // Si el usuario pasa del 60% del scroll, activa el fondo 3
-      if (porcentajeScroll >= 60) {
+      if (porcentajeScroll >= 66) {
         fondo3.classList.add('activo');
       } else {
         fondo3.classList.remove('activo');
@@ -35,26 +31,47 @@
 </head>
 <body>
 
+<div class="main-header">
+  <header class="header-contendor">
+    <header nav class="header-nav">
+        <img src="https://i.postimg.cc/J4Gbzr7p/titulo-recortada.png" alt="Logo" class="header-logo">
+        <nav class="header-menu">
+          <a href="index.html" class="centrate">Inicio</a>
+          <a href="Clases.html" class="centrate">Clases</a>
+          <a href="Jefes.html" class="centrate">Jefes</a>
+          <a href="Hardmode.html" class="centrate">Hardmode</a>
+        </nav>
+  </header>
+</div>
+<hr>
+<div class="main-content">
+  <h1>Introducción</h1>
+  <p><strong>Terraria</strong> es un videojuego de aventura, exploración y supervivencia en 2D que ha logrado convertirse en uno de los títulos más populares de su género gracias a la enorme cantidad de contenido que ofrece. Desarrollado por Re-Logic, este juego permite a los jugadores adentrarse en un mundo generado aleatoriamente donde cada partida presenta nuevos desafíos, biomas, enemigos, tesoros y secretos por descubrir. A simple vista puede parecer un juego de construcción similar a otros títulos de supervivencia, pero en realidad destaca por su profundo sistema de combate, progresión de equipo y enfrentamientos contra poderosos jefes.</p><br>
+  <img src="https://static.wikia.nocookie.net/terraria/images/2/2b/Portadaps3.jpg/revision/latest?cb=20180216123927&path-prefix=es" alt="Portada de Terraria" class="main-image">
+  <p>A lo largo de la aventura, los jugadores deben recolectar recursos, fabricar herramientas, construir refugios y mejorar constantemente su equipamiento para enfrentarse a enemigos cada vez más peligrosos. Uno de los aspectos más importantes de Terraria es la libertad que ofrece para elegir diferentes formas de jugar. Cada persona puede desarrollar su personaje siguiendo un estilo de combate específico, conocido comúnmente como una <strong>clase</strong>.</p><br>
+  <p>Entre las principales clases del juego se encuentran el <strong>Melee</strong>, especializado en armas cuerpo a cuerpo y alta defensa; el <strong>Ranger</strong>, que utiliza arcos, armas de fuego y munición para atacar a distancia; el <strong>Mago</strong>, que emplea poderosos hechizos mediante el consumo de maná; el <strong>Invocador</strong> (La mejor en mi opinión), capaz de llamar criaturas y esbirros que luchan automáticamente contra los enemigos; y una combinación libre de varias clases para quienes prefieren un estilo híbrido. Cada clase cuenta con armaduras, accesorios y armas exclusivas que se vuelven más poderosas conforme avanza la progresión del juego.</p><br>
+  <img src="https://i.pinimg.com/736x/85/83/6e/85836ee95abeab709a7cef0373913e0e.jpg" alt="Clases de Terraria" class="main-image">
+  <p>Otro elemento fundamental son los <strong>jefes</strong>, enemigos únicos con gran cantidad de vida y habilidades especiales. Los jefes representan las mayores pruebas de habilidad y preparación, y derrotarlos permite desbloquear nuevas etapas del juego, materiales y objetos especiales. Algunos pueden aparecer de forma natural bajo ciertas condiciones, mientras que otros deben ser invocados mediante objetos específicos. Por ejemplo, el <strong>Ojo de Cthulhu</strong> puede ser invocado usando el Suspicious Looking Eye durante la noche; el <strong>Devoramundos (Eater of Worlds)</strong> se invoca destruyendo Orbes Sombríos en la Corrupción o utilizando el Worm Food; el <strong>Cerebro de Cthulhu</strong> aparece al destruir Corazones Carmesí en el Carmesí o mediante el Bloody Spine; y el temible <strong>Muro Carnoso (Wall of Flesh)</strong> puede invocarse arrojando una Muñeca Vudú de Guía a la lava en el Inframundo.</p><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBadW_qzMgiJHI7orBN7yH2m_wM8lJfO1RJzODyv_84N1xdh-FpFqRPKw&s=10" alt="Jefes de Terraria" class="main-image">
+  <p>La derrota de ciertos jefes es especialmente importante porque marca la transición entre las diferentes etapas del juego. El ejemplo más significativo es el enfrentamiento contra el <strong>Muro Carnoso</strong>, considerado el jefe final del modo normal. Al vencerlo, el mundo entra en una nueva fase conocida como <strong>Modo Difícil</strong>, una de las mecánicas más importantes de Terraria.</p><br>
+  <p>El Hardmode transforma completamente el mundo. Nuevos enemigos comienzan a aparecer, los biomas de Corrupción, Carmesí y Santidad se expanden con mayor rapidez, y se desbloquean minerales mucho más poderosos que permiten fabricar mejores herramientas, armas y armaduras. Además, se habilita el acceso a numerosos jefes adicionales como los <strong>Mecánicos (Destructor, Gemelos y Skeletron Prime), Plantera, Emperatriz de la Luz, Duque Fishron, Golem, el Cultista Lunático y finalmente el poderoso Moon Lord,</strong> considerado el jefe final de la progresión principal.</p><br>
+  <img src="https://64.media.tumblr.com/2f785fd5e66373ffc8cce8b16c404f1f/tumblr_pclvfxnxrW1xo40jfo1_1280.png" alt="Jefes de Hardmode" class="main-image">
+  <p>Durante esta etapa, los jugadores deben utilizar el <strong>Pwnhammer</strong> obtenido tras derrotar al Muro Carnoso para destruir los altares demoníacos o carmesíes y así generar nuevos minerales en el mundo. Estos recursos son esenciales para sobrevivir a la creciente dificultad de los enemigos y continuar avanzando. El Hardmode no solo aumenta el desafío, sino que también multiplica las posibilidades de exploración, equipamiento y construcción, convirtiendo la segunda mitad del juego en una experiencia completamente distinta.</p><br>
+  <img src="https://preview.redd.it/which-early-hardmode-ores-do-you-prefer-v0-invl4ef5dcqe1.jpg?width=491&format=pjpg&auto=webp&s=91813a5ed9994673b4b0ed6ecc2cb3deb8bd94ea" alt="Hardmode" class="main-image">
+  <p>En resumen, Terraria es mucho más que un simple juego de supervivencia. Su combinación de exploración, construcción, combate y progresión crea una aventura repleta de contenido donde las distintas clases ofrecen estilos de juego únicos, los jefes ponen a prueba las habilidades de los jugadores y el Hardmode introduce una nueva dimensión de desafíos y recompensas. Gracias a esta gran variedad de mecánicas, Terraria continúa siendo una experiencia emocionante y rejugable que invita constantemente a descubrir nuevos secretos y alcanzar metas cada vez más ambiciosas.</p><br>
+</div>
+<div class="main-footer">
+  <footer class="footer-contendor">
+    <p class="footer-text">© 2026 Mi Sitio Web de Azael Isaac Robles Lazcano. Todos los derechos reservados.</p> 
+  </footer>
+</div>
+
+
+
   <div class="contenedor-fondos">
     <div class="fondo fondo-1"></div>
     <div class="fondo fondo-2"></div>
     <div class="fondo fondo-3"></div>
   </div>
-
-  <img url="https://postimg.cc/s1qfnvjh" width="50">
-
-  <section class="seccion">
-    <h1>Inicio (Fondo 1)</h1>
-  </section>
-  
-  <section class="seccion">
-    <h1>Bajando... (Fondo 2 activado al 30%)</h1>
-  </section>
-  
-  <section class="seccion">
-    <h1>Cerca del final... (Fondo 3 activado al 60%)</h1>
-  </section>
-
-  
 </body>
 </html>

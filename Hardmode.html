@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondo con Transición por Scroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fino.css">
+<script>
+    window.addEventListener('scroll', () => {
+      const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+      const porcentajeScroll = (window.scrollY / alturaTotal) * 100;
+
+      const fondo2 = document.querySelector('.fondo-2');
+      const fondo3 = document.querySelector('.fondo-3');
+
+      if (porcentajeScroll >= 33) {
+        fondo2.classList.add('activo');
+      } else {
+        fondo2.classList.remove('activo');
+      }
+      if (porcentajeScroll >= 66) {
+        fondo3.classList.add('activo');
+      } else {
+        fondo3.classList.remove('activo');
+      }
+    });
+ </script>
+</head>
+<body>
+
+<div class="main-header">
+  <header class="header-contendor">
+    <header nav class="header-nav">
+        <img src="https://i.postimg.cc/J4Gbzr7p/titulo-recortada.png" alt="Logo" class="header-logo">
+        <nav class="header-menu">
+          <a href="Principal.html" class="centrate">Inicio</a>
+          <a href="Secundario.html" class="centrate">Clases</a>
+          <a href="Tercero.html" class="centrate">Jefes</a>
+          <a href="Cuarta.html" class="centrate">Hardmode</a>
+        </nav>
+  </header>
+</div>
+<hr>
+<div class="main-content">
+    <h1>Hardmode</h1>
+    <p>El <strong>Hardmode</strong> es una fase avanzada del juego que se activa tras derrotar al jefe final del modo normal, el <strong>Muro Carnoso (Wall of Flesh)</strong>. Esta etapa transforma radicalmente el mundo de Terraria, introduciendo nuevos desafíos, enemigos más poderosos y recursos exclusivos que permiten a los jugadores progresar aún más en su aventura.</p><br>
+    <img src="https://static.wikia.nocookie.net/total-terraria-universes/images/3/3a/Anniemations-wall-of-flesh.jpg/revision/latest?cb=20230510232834" alt="Hardmode" class="main-image">
+    <p>Durante el Hardmode, los jugadores deben utilizar el <strong>Pwnhammer</strong> obtenido tras derrotar al Muro Carnoso para destruir los altares demoníacos o carmesíes y así generar nuevos minerales en el mundo. Estos recursos son esenciales para sobrevivir a la creciente dificultad de los enemigos y continuar avanzando. El Hardmode no solo aumenta el desafío, sino que también multiplica las posibilidades de exploración, equipamiento y construcción, convirtiendo la segunda mitad del juego en una experiencia completamente distinta.</p><br>
+    <img src="https://preview.redd.it/which-early-hardmode-ores-do-you-prefer-v0-invl4ef5dcqe1.jpg?width=491&format=pjpg&auto=webp&s=91813a5ed9994673b4b0ed6ecc2cb3deb8bd94ea" alt="Hardmode" class="main-imaghttps://preview.redd.it/which-early-hardmode-ores-do-you-prefer-v0-invl4ef5dcqe1.jpg?width=491&format=pjpg&auto=webp&s=91813a5ed9994673b4b0ed6ecc2cb3deb8bd94ea">
+    <p>En resumen, el Hardmode representa un cambio significativo en la jugabilidad de Terraria, ofreciendo a los jugadores una experiencia más desafiante y gratificante. La introducción de nuevos enemigos, biomas y recursos asegura que cada partida sea única y emocionante, manteniendo a los jugadores comprometidos mientras exploran y conquistan este mundo en constante evolución.</p><br>
+</div>
+<div class="main-footer">
+  <footer class="footer-contendor">
+    <p class="footer-text">© 2026 Mi Sitio Web de Azael Isaac Robles Lazcano. Todos los derechos reservados.</p> 
+  </footer>
+</div>
+
+
+
+  <div class="contenedor-fondos">
+    <div class="fondo fondo-1"></div>
+    <div class="fondo fondo-2"></div>
+    <div class="fondo fondo-3"></div>
+  </div>
+</body>
+</html>
