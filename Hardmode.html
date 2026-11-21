@@ -8,25 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fino.css">
-<script>
-    window.addEventListener('scroll', () => {
-      const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
-      const porcentajeScroll = (window.scrollY / alturaTotal) * 100;
-
-      const fondo2 = document.querySelector('.fondo-2');
-      const fondo3 = document.querySelector('.fondo-3');
-
-      if (porcentajeScroll >= 33) {
-        fondo2.classList.add('activo');
-      } else {
-        fondo2.classList.remove('activo');
-      }
-      if (porcentajeScroll >= 66) {
-        fondo3.classList.add('activo');
-      } else {
-        fondo3.classList.remove('activo');
-      }
-    });
+<script src="js/Yarvis.js" defer>
+   
  </script>
 </head>
 <body>
