@@ -165,3 +165,42 @@ ol {
     text-align: center;
     list-style-position: inside;
 }
+    .tabla-simple {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Delicious Handrawn", cursive;
+      margin: 20px 0;
+    }
+    .tabla-simple th, .tabla-simple td {
+      border: 1px solid hsl(0, 0%, 0%);
+      padding: 12px;
+      text-align: left;
+    }
+    .tabla-simple th {
+      background-color: #3b1c1c;
+      font-weight: bold;
+    }
+    .tabla-simple tr:nth-child(even) {
+      background-color: #3b1c1c;
+    }
+    .tabla-simple tr:hover {
+      background-color: #2e1616;
+    }
+    button {
+      background-color: #3b1c1c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      Align-items: center;
+      font-family: "Delicious Handrawn", cursive;
+      text-align: center;
+      place-items: center;
+      display: grid;
+    }
+    button:hover {
+      background-color: #2e1616;
+      color  : #ffd900;
+    }
